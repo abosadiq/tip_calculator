@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  margin-top: 2rem; }
+
+body {
+  background-color: #ccc; }
+
+h1 {
+  font-size: 3.2rem;
+  text-align: center;
+  margin-bottom: 2rem; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  width: 90vw;
+  margin: 0 auto;
+  background-image: linear-gradient(-45deg, #12a569, #965a21);
+  color: #fff; }
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .form__label {
+    font-size: 2.3rem; }
+  .form__text, .form__control {
+    width: 50%;
+    height: 3rem; }
+    @media screen and (max-width: 56.25em) {
+      .form__text, .form__control {
+        width: 100%; } }
+  .form > *:not(:last-child) {
+    margin-bottom: 2rem; }
+
+.btn {
+  width: 50%;
+  height: 50px;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  background-image: linear-gradient(to right bottom, #901445, #9055);
+  border: none;
+  color: #fff;
+  letter-spacing: 0.7rem;
+  cursor: pointer; }
+
+#totalTip {
+  font-size: 2rem;
+  display: flex;
+  margin-top: 2rem; }
+
+#perPerson {
+  margin-left: 1rem; }
